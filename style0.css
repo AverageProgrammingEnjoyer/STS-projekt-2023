@@ -1,0 +1,682 @@
+/*============= RESETS & DEFAULT STYLING=============*/
+
+:root
+{
+	--zelena: #ffd617; /*spremenljivka*/
+}
+
+.zelena
+{
+	color: var(--zelena);
+}
+
+.zelenaBG
+{
+	background-color: var(--zelena);
+}
+
+.modra
+{
+	background-color: #003399 !important;
+}
+
+.jumbotron
+{
+	background-color: #003399 !important;
+}
+
+body
+{
+	/*background-color: #010721;*/
+	font-family: 'Lato', sans-serif;
+	color:black;
+}
+
+h3.heading
+{
+	text-transform:uppercase;
+	font-weight:700;
+	font-size:1.9rem;
+	text-align:center;
+	margin-bottom:1.9rem;
+	z-index:99;
+}
+
+.heading-underline
+{
+	width:7rem;
+	height: .2rem;
+	background-color: var(--zelena);
+	margin:0 auto 2rem;
+	z-index:99;
+}
+/*--- iPhone X Remove Gutters ---*/
+
+/*--- Prevent Horizontal Scrolling & Font Style ---*/
+
+/*--- Nav Scrolling Offset ---*/
+
+.offset:before{
+	height:4rem;
+	content:"";
+	display:block;
+	margin-top:-4rem;
+}
+/*--- Extra Bootstrap Column Padding ---*/
+
+[class*="col-"]
+{
+	padding:1rem;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar-brand img
+{
+	height: 2rem;
+}
+
+.navbar
+{
+	text-transform:uppercase;
+	font-weight:700; /*bold*/
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	padding: .7rem 1rem; /*odmik zgroaj/spodaj in levo/desno*/
+	transition: background-color 1s ease;
+}
+
+.navbar-nav .nav-link
+{
+	color:white;
+	padding-top: .8rem;
+	transition: color .6s ease;
+}
+
+.navbar-nav li
+{
+	padding-right: .8rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active
+{ /*za telefon, ko si na tistem delu spletne strani se obarva*/
+	color: var(--zelena);
+}
+
+.custom-toggler-icon
+{
+	color:white;
+	font-size: 1.6rem;
+}
+
+/*--- Remove Button Outline ---*/
+button:focus,
+a:focus
+{
+	outline:0;
+	-webkit-appearance: none;
+	box-shadow:none;
+}
+
+.navbar.solid,
+.navbar.solid-toggle
+{
+	background-color:rgba(0,0,0,0.7);
+	transition: background-color 1s ease;
+}
+
+
+
+/*============= LANDING PAGE: HOME =============*/
+
+/*imageslider*/
+.carousel-item
+{
+	height:100vh;
+	min-height:18.75rem;
+	background: no-repeat center center scroll;
+	background-size: cover;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active
+{
+	transition:transform 1.5s ease;
+}
+
+/*--- Fixed Video Background--*/
+
+.video-background 
+{
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   /*background-color: rgba(0,0,0, 0.7); /* Black Opacity On Video */
+ }
+ 
+ .video-wrap 
+ {
+   clip: rect(0, auto, auto, 0);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+ 
+ #video 
+ {
+   position: fixed;
+   display: block;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center center;
+   -webkit-transform: translateZ(0);
+           transform: translateZ(0);
+   will-change: transform;
+   z-index: -1000;
+ }
+ 
+ video 
+ { 
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   z-index: -100;
+   transform: translateX(-50%) translateY(-50%);
+   background: url('') no-repeat;
+   background-size: cover;
+   transition: 1s opacity;
+ }
+/*tukaj se konca koda za video*/
+
+/* Animirana puščica*/
+
+.arrow
+{
+	position:absolute;
+	bottom: 12%;
+	width: 100%;
+	animation: bounce 2s infinite;
+}
+
+.fa-angle-down
+{
+	font-size:2.2rem;
+	color:white;
+	opacity: .4;
+	transition:opacity .6s ease;
+}
+
+.fa-angle-down:hover
+{
+	opacity: .8;
+}
+
+.caption
+{
+	position:absolute;
+	top:38%;
+	width:100%;
+	max-width:100%;
+}
+
+.caption h1
+{
+	font-size:4.5rem;
+	letter-spacing: .3rem;
+	padding-bottom: .5rem;
+	text-shadow: .1rem .1rem .8rem black;
+}
+
+.caption h3
+{
+	font-size:2.5rem;
+	letter-spacing: .1rem;
+	padding-bottom: 2rem;
+	text-shadow: .1rem .1rem .8rem black;
+}
+
+.caption .btn-lg
+{
+	font-size:1.1rem;
+	padding: .8rem 1.5rem;
+}
+
+/*--- Fixed Landing Page Section ---*/
+
+
+/*============= FEATURES SECTION =============*/
+
+.feature span .fa-circle
+{
+	color:var(--zelena);
+	
+}
+
+.feature
+{
+	margin-top: 2rem;
+	color:white;
+}
+
+#features{
+	color:white;
+}
+#team h3{
+	color:white;
+}
+	
+#skills .span{
+	color:white;
+}
+
+#skills .heading{
+	color: white;
+}
+
+.feature h3
+{
+	padding: .5rem 0;
+	text-transform:uppercase;
+	font-size: 1.3rem;
+}
+
+
+/*===== FIXED BACKGROUND IMG DARK (built with care) =====*/
+
+.fixed
+{
+	position:relative;
+	width:100%;
+	display:table;
+}
+
+.fixed-wrap
+{
+	clip:rect(0,auto,auto,0);
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	z-index:-99;
+}
+
+.fixed-inner
+{
+	background-image: url('../img/fixed/office.jpg');
+	position:fixed;
+	height:100%;
+	width:100%;
+	background-size:cover;
+	background-position:center center;
+	background-repeat: no-repeat;
+	
+	-webkit-transform:translateZ(0);
+	will-change: transform;
+	z-index: -1;
+	top:0;
+	left:0;
+	display:table;
+}
+
+.fixed-inner2
+{
+	background-image: url('../img/fixed/apple.jpg');
+	position:fixed;
+	height:100%;
+	width:100%;
+	background-size:cover;
+	background-position:center center;
+	background-repeat: no-repeat;
+	
+	-webkit-transform:translateZ(0);
+	will-change: transform;
+	z-index: -1;
+	top:0;
+	left:0;
+	display:table;
+}
+
+.dark
+{
+	background-color: rgba(0,0,0,0.7);
+	padding:7rem 0;
+	z-index:100;
+}
+
+/*============= CSS PORTFOLIO SECTION =============*/
+
+.portfolio-item img:hover{
+transform:scale(1.3);
+cursor: zoom-in;
+}
+
+.portfolio-item img{
+transition: transform .4s ease;
+height:500px;
+width:500px;
+size:fill;
+}
+
+.portfolio-item{
+overflow: hidden;
+height:500px;
+width:600px;
+background-size:fill;
+size:fill;
+}
+
+/*============= PRICING SECTION =============*/
+
+.pricing-panel{
+	background-color: white;
+	height: 100%;
+	padding:2.5rem;
+	border-top: .2rem solid var(--zelena);
+	box-shadow: 0 0 .8rem rgba(0,0,0,0.3);
+	transition: transform .7s ease;
+	position:relative;
+	overflow:hidden;
+}
+
+.pricing-panel:hover{
+	transform:scale(1.1);
+}
+
+.pricing-panel h4{
+	font-size:1.1rem;
+	font-weight:700;
+}
+
+.pricing-panel .btn-sm{
+	padding: .5rem 1rem;
+}
+
+.trak{
+	background-color: #505962;
+	color:white;
+	height: 2rem;
+	width:10rem;
+	padding-top:.4rem;
+	position: absolute;
+	top:1.5rem;
+	right:-2.8rem;
+	transform:rotate(45deg);
+	
+}
+/*============= TEAM SECTION FIXED BG IMG LIGHT =============*/
+
+/*--- Team Light Background Image ---*/
+
+.fixed-light
+{
+	background-image: url('../img/fixed/jerome.gif');
+	position:fixed;
+	height:100%;
+	width:100%;
+	background-size:cover;
+	background-position:center center;
+	
+	-webkit-transform:translateZ(0);
+	will-change: transform;
+	z-index: -1;
+	top:0;
+	left:0;
+	display:table;
+}
+
+.light
+{
+	background-color: rgba(255,255,255,.7);
+	padding:6rem 0;
+	z-index:100;
+}
+
+.card{
+	height:100%;
+	text-align: center;
+	margin:1rem;
+	border: .2rem solid var(--zelena);
+	box-shadow:0 0 .8rem rgba(0, 0, 0, .3);
+	transition: transform .4s ease;
+}
+
+.card:hover{
+	transform:scale(.95);
+}
+
+.card ul{
+	list-style-type:none;
+	font-size:1.5rem;
+}
+
+.card li{
+	display:inline;
+	padding-right:0.9rem;
+}
+
+
+/*============= SKILLS SECTION =============*/
+
+
+/*============= CLIENTS SECTION =============*/
+
+#clients-carousel{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.clients img{
+	border-radius: 50%;
+	transition: transform .4s ease;
+}
+
+.clients img:hover{
+	transform: scale(.95);
+}
+
+blockquote .svg-inline--fa{
+	margin: 1rem;
+	color: #1EBBA3;
+}
+
+.clients-hr{
+	border-top: .1rem solid #1EBBA3;
+}
+
+
+
+/*============= CONTACT SECTION =============*/
+
+.footer {
+   background: url('../img/footer/footer.jpg') no-repeat;
+   background-size: cover;
+   color: white;
+   /* background-color: #505962; */
+}
+.row.outer {
+   background-color: rgba(57, 63, 70, .85);
+   padding: 1rem 2rem 3rem;
+}
+.footer img {
+   height: 2.5rem;
+   margin: 1.5rem 0;
+}
+
+
+.footer ul.social{
+	padding: 0;
+	margin: 0;
+}
+
+.footer ul li{
+	list-style-type: none;
+	display:inline;
+}
+
+.footer a,
+.footer ul.social li a {
+   color: white;
+   font-size:1.5rem;
+   padding-right: .8rem; 
+}
+
+.footer ul.social li a:hover {
+   color: #004494;
+}
+.footer h3 {
+   text-transform: uppercase;
+   margin: 1.5rem 0;
+}
+
+/*--- Contact Form --*/
+.form-group {
+   margin-bottom: 1.3rem;
+}
+.form-control {
+   background-color: #53595f;
+   border-radius: 0;
+   border: .15rem solid #666b71;
+   color: white!important;
+   font-size: 1.1rem;
+}
+.form-control:focus {
+   background-color: #53595f;
+   border: .15rem solid #666b71;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+   color: #b2b5b8!important;
+}
+
+.socket {
+   border-top: .2rem solid #666b71;
+   width: 100%;
+}
+
+/*============= TOP SCROLL =============*/
+
+a.top-scroll
+{
+	position:fixed;
+	bottom:1.2rem;
+	right:1.2rem;
+	z-index:100;
+	opacity:0.5;
+	display:none;
+}
+
+a.top-scroll.fa-angle-up
+{
+	background:white;
+	color:#53595F;
+	font-size:3.5rem;
+	height:1.7rem;
+	
+}
+
+a.top-scroll:hover
+{
+	opacity:.9;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 992px (lg) */
+
+@media (max-width:991px){
+	.caption h1{
+	font-size: 3.5rem;
+	letter-spacing:.2rem;
+	padding-bottom:.8rem;
+	}
+	
+	.caption h3{
+	font-size: 2.2rem;
+	padding-bottom:1.7rem;
+	}
+	
+	.caption .btn-lg{
+	font-size: 1rem;
+	padding:.7rem 1.2rem;
+	}
+}
+
+/* Devices under 768px (md) */
+
+.caption{
+		top:43%;
+	}
+
+@media (max-width:767px){
+	.caption h1{
+	font-size: 2.7rem;
+	letter-spacing:.15rem;
+	padding-bottom:.5rem;
+	}
+	
+	.caption h3{
+	font-size: 1.7rem;
+	padding-bottom:1.2rem;
+	}
+	
+	.caption .btn-lg{
+	font-size: 1rem;
+	padding:.6rem 1.1rem;
+	}
+}
+
+/* Devices under 576px (sm) */
+
+@media (max-width:575px){
+	
+	.caption{
+		top:43%;
+	}
+	
+	.caption h1{
+	font-size: 1.9rem;
+	letter-spacing:.12rem;
+	padding-bottom:.4rem;
+	}
+	
+	.caption h3{
+	font-size: 1.2rem;
+	padding-bottom:1rem;
+	}
+	
+	.caption .btn-lg{
+	font-size: .9rem;
+	padding:.4rem .9rem;
+	}
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
