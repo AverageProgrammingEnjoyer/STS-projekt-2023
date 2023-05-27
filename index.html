@@ -1,0 +1,889 @@
+<!DOCTYPE html> <!-- HTML5 -->
+
+	<html lang = "sl">
+	<head>
+		
+		<meta charset = "UTF-8">
+		
+		<!-- TITLE -->
+		<title>INFO-TOČKA</title>
+		<meta property = "og:title" content ="3.Ag">
+		<meta property = "twitter:title" content ="3.Ag">
+			
+		<!-- DESCRIPTION -->
+		<meta name = "description" content = "Odzivna spletna stran 3.Ag">
+		<meta property = "og:description" content = "Odzivna spletna stran 3.Ag">
+		<meta property = "twitter:description" content = "Odzivna spletna stran 3.Ag">
+		
+		<!-- AUTHOR -->
+		<meta name = "author" content = "3.Ag">
+			
+		<!-- FAV ICON -->
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<meta property = "og:image" content = "img/logo3ag.png">
+		<meta property = "twitter:image" content = "img/logo3ag.png">
+			
+		<!-- URL -->
+		<meta property = "og:url" content = "">
+		<meta property = "twitter:url" content = "">
+		
+		<!-- TYPE -->
+		<meta property = "og:type" content = "website">
+		<meta property = "twitter:type" content = "website">
+			
+		<!-- TWITTER CARD -->
+		<meta name = "twitter:card" content = "summary">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<!-- viewport-fit=cover lastnost pove brskalniku naj se spletna stran prikaže tako, da prekrije (cover) ves zaslon (screen), ki je na razpolago -->
+		
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<!---------- VSE CSS DATOTEKE (CSS SOURCE FILES)---------->
+		
+		<!-- Bootstrap CSS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<!-- Ostale CSS datoteke -->
+		<!-- Plugins.css -->
+		<link rel="stylesheet" href="css/plugins.css">
+		
+		<!-- Animate.css https://cdnjs.com/libraries/animate.css/  https://daneden.github.io/animate.css/ -->
+		<!-- Datoteka/knjižnica v kateri so spisane različne CSS animacije-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		
+		<!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+		<!-- Za galerijo slik v sekciji PORTFOLIO-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+		
+		<!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2  http://owlcarousel2.github.io/OwlCarousel2/ -->
+		<!-- Za "vrtiljak" oz. "slider" v sekciji MEET THE TEAM in sekciji OUR CLIENTS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+		
+		<!--Naša (custom) CSS datoteka style.css-->
+		<link rel="stylesheet" href="css/style0.css">
+		
+		<!---------- END OF CSS FILES ---------->
+		
+		<!-- Google Fonts https://fonts.google.com/ -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+			
+	</head>
+	<body data-spy = "scroll" data-target = "#navigacija">
+
+		<!---------- Start HOME Section ---------->
+			<div id = "home">
+				
+				<nav class = "navbar navbar-expand-lg fixed-top">
+					<div class = "container-fluid">
+						<a href = "#home" class = "navbar-brand">
+							<img src = "img/logo3ag.png" title = "na vrh" alt = "">
+						</a>
+						
+						<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navigacija">
+							<span class = "custom-toggler-icon">
+								<i class = "fas fa-bars"></i>
+							</span>
+						</button>
+						
+						<div class = "collapse navbar-collapse" id = "navigacija">
+							<ul class = "navbar-nav ml-auto">
+								<li class = "nav-item">
+									<a href = "#home" class = "nav-link">Domov</a>
+								</li>
+								<li class = "nav-item">
+									<a href = "#features" class = "nav-link">informacije</a>
+								</li>
+								<li class = "nav-item">
+									<a href = "#zelenaeu" class = "nav-link">Zelena eu</a>
+								</li>
+								<li class = "nav-item">
+									<a href = "#pricing" class = "nav-link">slike</a>
+								</li>
+								<li class = "nav-item">
+									<a href = "#team" class = "nav-link">drzave</a>
+								</li>
+								<li class = "nav-item">
+									<a href = "#skills" class = "nav-link">Podatki</a>
+								</li>
+								<li class = "nav-item">
+									<a href = "#clients" class = "nav-link">osebe</a>
+								</li>
+								<li class = "nav-item">
+									<a href = "#contact" class = "nav-link">kontakt</a>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</nav>
+				
+				<!-- image slider v HOME sekciji-->
+				
+				<div id = "carouselIndicators" class = "carousel slide" data-ride = "carousel" data-interval = "10000">
+					
+					<div class = "carousel-inner">
+						<div class = "carousel-item active" style = "background-image:url('img/home/computers1.jpg')">
+						
+						<!-- Napis na 1. sliki -->
+						
+						<div class = "caption text-center text-light text-uppercase">
+							<h1 class = "font-weight-bold os-animation" data-animation = "fadeInUp" data-delay = ".6s">
+							INFO <span class = "zelena"> TOČKA </span>
+							</h1>
+							
+							<h3 class = "os-animation" data-animation ="fadeInUp" data-delay = ".8s">
+							STŠ INFO TOČKA O EU
+							</h3>
+							
+							<a href = "#features" class = "btn btn-lg btn-outline-light rounded-0 os-animation" data-animation = "fadeInUp" data-delay = "1s">
+							Nadaljuj
+							</a>
+
+						</div>
+					</div>
+				
+				</div>
+				
+				<!-- Bouncing down arrow -->
+				<a href = "#features" class = "down-arrow text-center">
+					<div class = "arrow d-none d-md-block">
+						<i class = "fas fa-angle-down"></i>
+					</div>
+				</a>
+				
+			</div>
+		<!---------- End HOME Section ---------->
+
+
+		<!---------- Start FEATURES Section ---------->
+			<div id = "features" class = "offset">
+				<div class = "jumbotron m-0 py-5">
+					<div class = "col-12 os-animation" data-animation = "fadeInUp">
+						<h3 class = "heading"> Prednosti </h3>
+						<div class = "heading-underline"></div>
+					</div>
+				
+					<div class = "contariner">
+						<div class = "row text-center px-lg-4 px-xl-5">
+							
+							<div class = "col-md-4 col-sm-6 os-animation" data-animation = "fadeInLeft">
+								<div class = "feature px-2">
+									<span class = "fa-stack fa-2x">
+										<i class = "fas fa-circle fa-stack-2x"></i>
+										<i class="fas fa-euro-sign fa-stack-1x fa-inverse"></i>
+									</span>
+									<h3>Enotna valuta</h3>
+									<p class = "lead">
+									Evro uporablja kot zakonito plačilno sredstvo približno 330 milijonov ljudi. Območje držav z evrom predstavlja več kot 16,5 % svetovnega BDP in več kot 30 % svetovne trgovine (vključno s trgovino znotraj EU).
+									</p>
+								</div>
+							</div>
+							
+							<div class = "col-md-4 col-sm-6 os-animation" data-animation = "fadeInUp">
+								<div class = "feature px-2">
+									<span class = "fa-stack fa-2x">
+										<i class = "fas fa-circle fa-stack-2x"></i>
+										<i class="fas fa-globe-europe fa-stack-1x fa-inverse"></i>
+									</span>
+									<h3>Schengen</h3>
+									<p class = "lead">
+									Schengenski sporazum oziroma "Sporazum o postopni odpravi kontrol na skupnih mejah" je mednarodni sporazum med evropskimi državami, večinoma članicami Evropske unije, ki je uveljavil ukinitev mejnih kontrol na notranjih mejah na schengenskem območju, gibanje oseb in prestop notranjih mej, okrepljeno sodelovanje med policijami in carinami držav podpisnic sporazuma in nadzor ter način prestopanja na zunanjih mejah tega območja.
+									</p>
+								</div>
+							</div>
+							
+							<div class = "col-md-4 col-sm-6 os-animation" data-animation = "fadeInRight">
+								<div class = "feature px-2">
+									<span class = "fa-stack fa-2x">
+										<i class = "fas fa-circle fa-stack-2x"></i>
+										<i class="far fa-handshake fa-stack-1x "></i>
+									</span>
+									<h3>Povezanost</h3>
+									<p class = "lead">
+									Evropska unija ponuja mnoge izobraževalne programe. Namenjeni so izobraževanju mladih in odraslih. Omogočajo sodelovanje med šolami in izmenjavo učencev, dijakov in študentov.  Tako lahko slovenski učenci, dijaki in študenti  nabirajo izkušnje in znanje tudi v šolah v tujini.
+									</p>
+								</div>
+							</div>
+							
+							
+							
+						</div>
+					</div>
+				</div> <!-- End Jumbotron -->
+				
+				<!-- Start build with care -->
+				
+				<div class = "fixed" id = "zelenaeu">
+					<div class = "row dark text-light text-center">
+						<div class = "col-12 os-animation" data-animation = "fadeInUp">
+							<h3 class = "heading"> Program zelena evropa</h3>
+							<div class = "heading-underline"></div>
+						</div>
+						
+						<div class = "col-md-4 os-animation" data-animation = "fadeInLeft">
+							<h3 class = "zelena">Ozaveščanje dijakov</h3>
+							
+							<p class = "lead pt-4">
+							Skrbna poraba papirnatih brisačk.
+							</p>
+						</div>
+						
+						<div class = "col-md-4 os-animation" data-animation = "fadeInUp">
+							<h3 class = "zelena">Svetovni dan živali</h3>
+							
+							<p class = "lead pt-4">
+							4. Oktober, Modro-zeleni so čistili morsko obalo od Valdoltre do zdravilišča Debeli Rtič.
+							</p>
+						</div>
+						
+						<div class = "col-md-4 os-animation" data-animation = "fadeInRight">
+							<h3 class = "zelena">Zbiranje odpadnega papirja</h3>
+							
+							<p class = "lead pt-4">
+							Od 5.12.-9.12., izkupiček smo namenili društvu Palčica Pomagalčica.
+							</p>
+						</div>
+						
+						<div class = "col-md-4 os-animation" data-animation = "fadeInLeft">
+							<h3 class = "zelena">Evropski teden zmanjševanja odpadkov</h3>
+							
+							<p class = "lead pt-4">
+							19-27.11, letošnja tema osvetljuje problematiko tekstilnih odpadkov.
+							LINK:https://etzo.gzs.si/Portals/313/Etzo22-TrajnostJeVTrendu_low.pdf
+							</p>
+						</div>
+						
+						<div class = "col-md-4 os-animation" data-animation = "fadeInUp">
+							<h3 class = "zelena">Čistilna akcija ob svetovnem dnevu voda</h3>
+							
+							<p class = "lead pt-4">
+							22. marec, Modro-Zeleni so se odpravili na čistilno akcijo reke Rižane in njene okolice.
+							</p>
+						</div>
+						
+			
+						<div class = "col-md-4 os-animation" data-animation = "fadeInRight">
+							<h3 class = "zelena">Dan zemlje</h3>
+							
+							<p class = "lead pt-4">
+							Na šilo smo na praktičnih primerih iz Slovenije in sveta spoznavali kako so lahko tehnika in tehnologija lepo vključujeta v bolj prijazno-sonaravno(trajnostno)življenje.
+							</p>
+						</div>
+						
+					</div> <!-- end of row -->
+					
+					<div class = "fixed-wrap">
+						<div class = "fixed-inner"></div>
+					</div>
+				</div>
+				
+			</div> <!-- End id FEATURES -->
+		<!---------- End FEATURES Section ---------->
+	
+
+		<!---------- Start PORTFOLIO Section ---------->
+	<div id = "pricing" class = "offset modra">
+		<div class = "container-fluid px-0">
+			<div class = "row justify-content-center py-5">
+
+				
+				<!-- Prva slika -->
+				<div class = "col-md-3 col-sm-6 p-0 os-animation" data-animation = "bounceInLeft" data-delay = ".3s">
+					<div class = "portfolio-item">
+						<a href = "img/portfolio/Slika 1.jpg" data-lightbox = "example-set" data-title = "Opis slike">
+						<img src = "img/portfolio/Slika 1.jpg" class = "example-image w-100">
+						</a>
+					</div>
+				</div>
+				<!-- Konec 1. slike -->
+				
+				<!-- Druga slika -->
+				<div class = "col-md-3 col-sm-6 p-0 os-animation" data-animation = "bounceInLeft" data-delay = ".2s">
+					<div class = "portfolio-item">
+						<a href = "img/portfolio/Slika 2.jpg" data-lightbox = "example-set" data-title = "Opis slike">
+						<img src = "img/portfolio/Slika 2.jpg" class = "example-image w-100">
+						</a>
+					</div>
+				</div>
+				<!-- Konec 2. slike -->
+				
+				<!-- Tretja slika -->
+				<div class = "col-md-3 col-sm-6 p-0 os-animation" data-animation = "bounceInRight" data-delay = ".2s">
+					<div class = "portfolio-item">
+						<a href = "img/portfolio/Slika 3.jpg" data-lightbox = "example-set" data-title = "Opis slike">
+						<img src = "img/portfolio/Slika 3.jpg" class = "example-image w-100">
+						</a>
+					</div>
+				</div>
+				<!-- Konec 3. slike -->
+				
+				<!-- Četrta slika -->
+				<div class = "col-md-3 col-sm-6 p-0 os-animation" data-animation = "bounceInRight" data-delay = ".3s">
+					<div class = "portfolio-item">
+						<a href = "img/portfolio/Slika 4.jpg" data-lightbox = "example-set" data-title = "Opis slike">
+						<img src = "img/portfolio/Slika 4.jpg" class = "example-image w-100">
+						</a>
+					</div>
+				</div>
+				<!-- Konec 4. slike -->
+				
+				<!-- Peta slika -->
+				<div class = "col-md-3 col-sm-6 p-0 os-animation" data-animation = "bounceInLeft" data-delay = ".3s">
+					<div class = "portfolio-item">
+						<a href = "img/portfolio/Slika 5.jpg" data-lightbox = "example-set" data-title = "Opis slike">
+						<img src = "img/portfolio/Slika 5.jpg" class = "example-image w-100">
+						</a>
+					</div>
+				</div>
+				<!-- Konec 5. slike -->
+				
+				<!-- Šesta slika -->
+				<div class = "col-md-3 col-sm-6 p-0 os-animation" data-animation = "bounceInLeft" data-delay = ".2s">
+					<div class = "portfolio-item">
+						<a href = "img/portfolio/Slika 6.jpg" data-lightbox = "example-set" data-title = "Opis slike">
+						<img src = "img/portfolio/Slika 6.jpg" class = "example-image w-100">
+						</a>
+					</div>
+				</div>
+				<!-- Konec 6. slike -->
+		¸
+			</div>
+		</div>
+	</div>
+	<!---------- End of PORTFOLIO Section ---------->
+	
+
+		<!---------- Start TEAM Section ---------->
+			<div id = "team" class = "offset">
+				<div  class = "fixed">
+					<div class = "row">
+					
+						<div class = "col-12 os-animation" data-animation = "fadeInUp">
+							<h3 class = "heading "> DRŽAVE </h3>
+							<div class = "heading-underline"></div>
+						</div>
+						
+						<div class = "container">
+							<div class = "os-animation" data-animation = "fadeInUp">
+								<div id = "team-carousel" class = "owl-carousel owl-theme">
+								
+									<!-- PRVA KARTICA -->
+									<div class = "card">
+										<img src = "img/team/1.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Avstrija </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1995 </p>
+											
+											<p>83,871 km²</p>
+										</div>
+									</div>
+									
+									<!-- DRUGA KARTICA -->
+									<div class = "card">
+										<img src = "img/team/2.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Belgija </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1958 </p>
+											
+											<p>30,688 km²</p>
+										</div>
+									</div>
+									
+									<!-- TRETJA KARTICA -->
+									<div class = "card">
+										<img src = "img/team/3.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Bolgarija</h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2007 </p>
+											<p>110,994 km²</p>
+										</div>
+									</div>
+									
+									<!-- ČETRTA KARTICA -->
+									<div class = "card">
+										<img src = "img/team/4.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Hrvaška </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2013 </p>
+											<p>56,594 km²</p>
+										</div>
+									</div>
+									
+									<div class = "card">
+										<img src = "img/team/5.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Ciper </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2004 </p>
+											<p>9,251 km²</p>
+										</div>
+									</div>
+									
+									<div class = "card">
+										<img src = "img/team/6.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Češka </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2004 </p>
+											<p>78,867 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/7.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Danska </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1973 </p>
+											<p>42,951 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/8.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Estonija </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2004 </p>
+											<p>45,228 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/9.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Finska </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1995 </p>
+											<p>338,440 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/10.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Francija </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1958 </p>
+											<p>551,695 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/11.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Nemčija </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1958 </p>
+											<p>357,588 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/12.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Grčija </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1981 </p>
+											<p>131,957 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/13.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Madžarska </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2004 </p>
+											<p>93,025 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/14.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Irska </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1973  </p>
+											<p>70,273 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/15.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Italija </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1958 </p>
+											<p>302,073 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/16.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Latvija </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2004 </p>
+											<p>64,589 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/17.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Litva </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2004 </p>
+											<p>65,300 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/18.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Luksemburg </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1958</p>
+											<p>2,586 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/19.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Malta </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2004 </p>
+											<p>316 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/20.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Nizozemska </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1958 </p>
+											<p>41,850 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/21.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Poljska </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2004 </p>
+											<p>322,575 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/22.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Portugalska </h4>
+											<h5 class = "Bela"> suiiii </h5>
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1986 </p>
+											<p>92,212 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/23.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Romunija </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2007 </p>
+											<p>238,397 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/24.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Slovaška </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2004 </p>
+											<p>49,035 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/25.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Slovenija </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2004 </p>
+											<p>20,273 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/26.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Španija </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 1986 </p>
+											<p>505,990 km²</p>
+										</div>
+									</div>
+									<div class = "card">
+										<img src = "img/team/27.png" class = "card-img-top rounded-0">
+										<div class = "card-body">
+											<h4 class = "font-weight-bold"> Švedska </h4>
+											
+											<p class = "border-top border-bottom py-3 my 3"> Članica EU od leta 2001 </p>
+											<p>528,447 km²</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class = "fixed-wrap">
+						<div class = "fixed-inner2"></div>
+					</div>
+					
+				</div>
+			</div>
+		<!---------- End TEAM Section ---------->
+
+
+		<!---------- Start SKILLS Section ---------->
+			<div id = "skills" class = "offset ">
+				<div class = "jumbotron mb-0">
+					<div class = "container py-2">
+						<div class = "col-12 os-animation" data-animation = "fadeInUp">
+							<h3 class = "heading"> Podatki </h3>
+							<div class = "heading-underline"></div>
+						</div>
+						
+						<div class = "row justify-content-center text-center os-animation" data-animation = "fadeInUp">
+						
+							<div class = "col-lg-3 col-md-6">
+								<span class = "fa-stack fa-3x">
+									<i class = "fas fa-circle fa-stack-2x"></i>
+									<i class = "fas fa-map fa-stack-1x fa-inverse"></i>
+								</span>
+								<h1 class = "zelena font-weight-bold py-1">
+									<span class = "counter">27</span>
+								</h1>
+								<h4 class = "text-uppercase font-weight-bold" style = "color:white"> Držav</h4>
+							</div>
+							
+							<div class = "col-lg-3 col-md-6">
+								<span class = "fa-stack fa-3x">
+									<i class = "fas fa-square fa-stack-2x"></i>
+									<i class = "fas fa-users fa-stack-1x fa-inverse"></i>
+								</span>
+								<h1 class = "zelena font-weight-bold py-1">
+									<span class = "counter">443</span>
+									<span > mil</span>
+								</h1>
+								<h4 class = "text-uppercase font-weight-bold" style = "color:white"> Prebivalcev</h4>
+							</div>
+							
+							<div class = "col-lg-3 col-md-6">
+								<span class = "fa-stack fa-3x">
+									<i class = "fas fa-square fa-stack-2x"></i>
+									<i class = "fas fa-euro-sign fa-stack-1x fa-inverse"></i>
+								</span>
+								<h1 class = "zelena font-weight-bold py-1">
+									<span class = "counter">16.5</span>
+									<span > bilijon €</span>
+								</h1>
+								<h4 class = "text-uppercase font-weight-bold" style = "color:white"> BDP</h4>
+							</div>
+							
+							<div class = "col-lg-3 col-md-6">
+								<span class = "fa-stack fa-3x">
+									<i class = "fas fa-circle fa-stack-2x"></i>
+									<i class = "fas fa-globe-europe fa-stack-1x fa-inverse"></i>
+								</span>
+								<h1 class = "zelena font-weight-bold py-1">
+									<span class = "counter">4233262</span>
+								</h1>
+								<h4 class = "text-uppercase font-weight-bold" style = "color:white">km²</h4>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		<!---------- End of SKILLS Section ---------->
+
+
+		<!---------- Start CLIENTS Section ---------->
+		<div id = "clients" class = "offset">
+			<div class = "row py-5">
+				<div class = "col-12 os-animation" data-animation = "fadeInUp">
+					<h3 class = "heading">Pomembne osebe</h3>
+					<div class = "heading-underline"></div>
+				</div>
+				
+				<div class = "col-12 px-xl-5 os-animation" data-animation = "fadeInUp">
+					<div id = "clients-carousel" class ="owl-carousel owl-theme">
+						
+						<div class = "row clients px-3 px-md-4">
+							<div class = "col-lg-4 my-auto">
+								<img src = "img/clients/client1.jpg" alt = "" title ="">
+							</div>
+							<div class = "col-lg-8">
+								<blockquote class = "text-justify">
+									
+									Charles Michel
+									<hr class = "clients-hr">
+									<cite>&#8212; Predsednik evrposkega sveta (od 1. decembra 2019).</cite>
+								</blockquote>
+							</div>
+						</div>
+						
+						<div class = "row clients px-3 px-md-4">
+							<div class = "col-lg-4 my-auto">
+								<img src = "img/clients/client2.jpg" alt = "" title ="">
+							</div>
+							<div class = "col-lg-8">
+								<blockquote class = "text-justify">
+									
+									Ursula von der Leyen
+									<hr class = "clients-hr">
+									<cite>&#8212; Predsednica evropske komisije (od 1. decembra 2019)</cite>
+								</blockquote>
+							</div>
+						</div>
+						
+						<div class = "row clients px-3 px-md-4">
+							<div class = "col-lg-4 my-auto">
+								<img src = "img/clients/client3.jpg" alt = "" title ="">
+							</div>
+							<div class = "col-lg-8">
+								<blockquote class = "text-justify">
+									
+									Roberta Metsola
+									<hr class = "clients-hr ">
+									<cite>&#8212; Predsednica evropskega parlamenta (od 11. januarja 2022)</cite>
+								</blockquote>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+	    </div>
+		<!---------- End of CLIENTS Section ---------->
+
+		<!---------- Start CONTACT Section ---------->
+			<div id = "contact" class = "offset">
+		<div class="container-fluid footer px-0">
+			<div class="row outer">
+
+				<div class="container">
+				
+					<div class="row py-3">
+						<div class = "col-12 os-animation" data-animation = "fadeInUp">
+							<h3 class = "heading">Povezave</h3>
+							<div class = "heading-underline"></div>
+						</div>
+						
+						
+						
+						<div class="col-md-6 px-0 pr-md-3">
+							
+							
+							<strong>Naša lokacija</strong>
+							<p>Srednja tehniška šola Koper<br>Šmarska cesta 4e, 6000 Koper</p>
+							<strong> Naš Facebook </strong>
+							<ul class="social pt-3">
+								<li><a href="https://www.facebook.com/profile.php?id=100088254222816"><i class="fab fa-facebook-square fa-4x"></i></a></li>
+								
+							</ul>
+						</div> <!-- End Column -->
+						
+
+						
+						<div class="col-md-6 px-0 pr-md-3">
+							<strong> Intervju </strong>
+
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/U_FnTe6O6Fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+						</div> <!-- End Column -->
+
+
+						
+
+					</div> <!-- End Row -->
+					
+				
+				<div class="socket text-center pt-3">
+				&copy; STŠ 2023
+				</div>
+					
+				</div> <!-- End Container -->
+
+			</div> <!-- End Row Outer -->
+			
+			
+			
+		</div> <!-- End Container Fluid -->
+	</div>
+	<!---------- End CONTACT Section ---------->
+		<!---------- End CONTACT Section ---------->
+
+
+		<!---------- Top Scroll ---------->
+		<a href = "#home" class = "top-scroll">
+			<i class = "fas fa-angle-up"></i>
+		</a>
+		
+		<!---------- End of Top Scroll ---------->
+
+
+		<!---------- VSE JS DATOTEKE (JavaScript SOURCE FILES) ---------->
+
+		<!-- jQuery library from CDN: https://code.jquery.com/ -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous">
+		</script>
+		
+		<!-- Popper JS from CDN -->
+		<!-- Uporablja se v kombinaciji s komponento Modal iz BS - pojavna ("pop-up") okna  -->
+		<!-- V našem projektu tega ne bomo uporabili, dodano je, če bi to kdo naknadno nadgradil projekt in bi mu prišla prav ta knjižnica -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+		crossorigin="anonymous">
+		</script>
+		
+		<!-- Bootstrap JS from CDN: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+		crossorigin="anonymous">
+		</script>
+		
+		<!-- Font Awesome: https://fontawesome.com/  
+		<!-- Za vektorske ikone, logotipe družbenih omrežij -->
+		<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+		<!-- povezavo je bolje dodati drugače: vsak svojo (get your own kit): prednost dodajanja povezave preko "kit-a" je ta, da se z vsako novo verzijo, ta samodejno posodobi - ni nam potrebno dodajat novo povezavo, ko pride ven nova verzija -->
+		
+		
+		<!-- Waypoints: https://cdnjs.com/libraries/waypoints  https://github.com/imakewebthings/waypoints -->
+		<!-- Za zakasnitev animacij, ko se pomikamo navzdol po spletni strani => sprožilec animacij -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
+		</script>
+		
+		<!-- Lightbox Image Gallery: https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+		<!-- Za galerijo slik v sekciji PORTFOLIO-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js">
+		</script>
+		
+		<!-- Owl Carousel: https://cdnjs.com/libraries/OwlCarousel2  http://owlcarousel2.github.io/OwlCarousel2/ -->
+		<!-- Za "vrtiljak" oz. "slider" v sekciji TEAM in sekciji CLIENTS-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+		</script>
+		
+		<!-- jQuery CounterUp: https://www.jsdelivr.com/package/npm/jquery.counterup  https://github.com/bfintal/Counter-Up2 -->
+		<!-- Za števce številk v sekciji SKILLS-->
+		<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js">
+		</script>
+		
+		<!-- Bootstrap Form Validator: https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
+		<!-- Za preverjanje izpolnjevanja obrazca v sekciji CONTACT -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js">
+		</script>
+		
+		<!-- Naša (custom) JS datoteka (JS plugins) -->
+		<script src="js/script.js"></script>
+		
+		<!---------- END OF JS FILES ---------->
+
+	</body>
+	</html>
